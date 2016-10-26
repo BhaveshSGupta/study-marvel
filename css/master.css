@@ -1,4 +1,10 @@
+html{font-size: 10px}
 .hide{display: none!important;}
-body{font-family: Roboto}
-.contentWrapper{max-width: 990px;margin: 0 auto;}
+body{font-family: Roboto;color: #000;}
+.contentWrapper{max-width: 930px;margin: 0 auto;padding-top: 100px;}
 h1,h2,h3,h4,h5{font-weight: 300;}
+h2{font-size: 4.4rem;text-align: center;}
+h3{font-size: 2.8rem;line-height:40px;text-align: center;}
+.googleplay{height: 100px;}
+.leftWrapper{text-align: center;}
+img{max-width: 100%}
