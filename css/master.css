@@ -1,3 +1,4 @@
 .hide{display: none!important;}
-body{font-family: Roboto Light}
+body{font-family: Roboto}
 .contentWrapper{max-width: 990px;margin: 0 auto;}
+h1,h2,h3,h4,h5{font-weight: 300;}
