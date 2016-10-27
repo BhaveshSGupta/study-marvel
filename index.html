@@ -15,9 +15,9 @@
         <meta property="og:title" content="Augmented Reality for  Students Teachers Learners and Enthusiasts">
         <meta property="og:description" content="An Augmented Reality-based Science Education book and mobile application tailored to the classroom with superior real-time interactive objects for enhanced and practical classroom training!">
         <meta property="og:site_name" content="Augmented Reality for  Students, Teachers, Learners and Enthusiasts">
-        <meta property="og:image" content="http://storage.googleapis.com/instapage-user-media/5fcbb967/9035828-0-Untitled-1.jpg">
+        <!-- <meta property="og:image" content="http://storage.googleapis.com/instapage-user-media/5fcbb967/9035828-0-Untitled-1.jpg"> -->
         <!-- font injector -->
-        <link type="text/css" rel="stylesheet" media="screen, print" href="//fonts.googleapis.com/css?family=Roboto:300"><!-- end -->
+        <!-- end -->
        <!--  <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyDcH-DQfSKxWkfvUghDZZBvVEueJPAHhow">
         </script> -->
         <!--
@@ -67,17 +67,53 @@
                                 <img src="./images/ic.jpg">
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-8">
                             <div class="footerLeftWrapper">
                                 <ul>
-                                    <li>Showcased at Vibrant Gujarat Startup Summit</li>
-                                    <li>Winner at Gujrat CSR Prototype Quest</li>
-                                    <li>Runner up at AR/VR Summit, Bangalore</li>
-                                    <li>In the Semi-Finals of IIT-KGP's Empresario</li>
+                                    <li><p>Showcased at Vibrant Gujarat Startup Summit</p></li>
+                                    <li><p>Winner at Gujrat CSR Prototype Quest</p></li>
+                                    <li><p>Runner up at AR/VR Summit, Bangalore</p></li>
+                                    <li><p>In the Semi-Finals of IIT-KGP's Empresario</p></li>
                                 </ul>
+                                <div id="map"></div>
+<script>
+       function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -33.866, lng: 151.196},
+          zoom: 15
+        });
+
+        var infowindow = new google.maps.InfoWindow();
+        var service = new google.maps.places.PlacesService(map);
+
+        service.getDetails({
+          placeId: 'ChIJN1t_tDeuEmsRUsoyG83frY4'
+        }, function(place, status) {
+          if (status === google.maps.places.PlacesServiceStatus.OK) {
+            var marker = new google.maps.Marker({
+              map: map,
+              position: place.geometry.location
+            });
+            google.maps.event.addListener(marker, 'click', function() {
+              infowindow.setContent('<div><strong>' + place.name + '</strong><br>' +
+                'Place ID: ' + place.place_id + '<br>' +
+                place.formatted_address + '</div>');
+              infowindow.open(map, this);
+            });
+          }
+        });
+      }
+
+    </script>
+      <script async defer
+
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmjbNegXrIK26klGmE2yxeX39zhW_1P14&callback=initMap&libraries=places">
+    </script>
+
+
                             </div>
                         </div>
-                        <div class="col-md-6"></div>
+                        <div class="col-md-4"></div>
                     </div>
                 </div>
             </div>
