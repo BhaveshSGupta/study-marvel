@@ -18,7 +18,7 @@
         <!-- <meta property="og:image" content="http://storage.googleapis.com/instapage-user-media/5fcbb967/9035828-0-Untitled-1.jpg"> -->
         <!-- font injector -->
         <!-- end -->
-       <!--  <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyDcH-DQfSKxWkfvUghDZZBvVEueJPAHhow">
+        <!--  <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyDcH-DQfSKxWkfvUghDZZBvVEueJPAHhow">
         </script> -->
         <!--
         <title>StudyMarvel - We are Changing the way you learn</title> -->
@@ -36,7 +36,6 @@
         <div class="mainWrapper">
             <div class="contentWrapper">
                 <div class="container-fluid">
-                    
                     <div class="row">
                         <div class="col-md-4">
                             <div class="mobile">
@@ -60,7 +59,6 @@
                             <h2 class="hide">The blood</h2>
                             <div class="col-md-4"><img src="./images/marker.jpg"></div>
                             <div class="col-md-8"><h3>This symbol indicates that you can scan the page to interact with 3D Models. Download the StudyMarvel App from the Play Store and start augmenting the pages.</h3></div>
-                            
                         </div>
                         <div class="col-md-12">
                             <div class="icWrapper">
@@ -76,41 +74,31 @@
                                     <li><p>In the Semi-Finals of IIT-KGP's Empresario</p></li>
                                 </ul>
                                 <div id="map"></div>
-<script>
-       function initMap() {
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -33.866, lng: 151.196},
-          zoom: 15
-        });
-
-        var infowindow = new google.maps.InfoWindow();
-        var service = new google.maps.places.PlacesService(map);
-
-        service.getDetails({
-          placeId: 'ChIJN1t_tDeuEmsRUsoyG83frY4'
-        }, function(place, status) {
-          if (status === google.maps.places.PlacesServiceStatus.OK) {
-            var marker = new google.maps.Marker({
-              map: map,
-              position: place.geometry.location
-            });
-            google.maps.event.addListener(marker, 'click', function() {
-              infowindow.setContent('<div><strong>' + place.name + '</strong><br>' +
-                'Place ID: ' + place.place_id + '<br>' +
-                place.formatted_address + '</div>');
-              infowindow.open(map, this);
-            });
-          }
-        });
-      }
-
-    </script>
-      <script async defer
-
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmjbNegXrIK26klGmE2yxeX39zhW_1P14&callback=initMap&libraries=places">
-    </script>
-
-
+                                <script>
+                                function initMap() {
+                                https://maps.google.com/maps?ll=,&z=21&t=m&hl=en-US&gl=US&mapclient=apiv3&cid=287907250945811592
+                                var EDi = {lat: 23.113979, lng: 72.628759};
+                                var map = new google.maps.Map(document.getElementById('map'), {
+                                zoom: 15,
+                                center: EDi
+                                });
+                                var contentString = '<div id="content"><div id="siteNotice"></div><h3 id="firstHeading" class="firstHeading">Entrepreneurship Development Institute of india, Ahmedabad</h3></div>';
+                                var infowindow = new google.maps.InfoWindow({
+                                content: contentString
+                                });
+                                var marker = new google.maps.Marker({
+                                position: EDi,
+                                map: map,
+                                title: 'Entrepreneurship Development Institute of india, Ahmedabad'
+                                });
+                                
+                                infowindow.open(map, marker);
+                                
+                                }
+                                </script>
+                                <script async defer
+                                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmjbNegXrIK26klGmE2yxeX39zhW_1P14&callback=initMap&libraries=places">
+                                </script>
                             </div>
                         </div>
                         <div class="col-md-4"></div>

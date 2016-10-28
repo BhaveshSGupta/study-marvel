@@ -2,7 +2,7 @@ html{font-size: 10px}
 .hide{display: none!important;}
 body{font-family: Roboto;color: #000;font-weight: 300;}
 .contentWrapper{max-width: 930px;margin: 0 auto;padding-top: 100px;}
-h1,h2,h3,h4,h5{}
+h1,h2,h3,h4,h5{font-weight: 300;}
 h2{font-size: 4.4rem;text-align: center;}
 h3{font-size: 2.8rem;line-height:40px;text-align: center;}
 .googleplay{height: 100px;}
@@ -14,3 +14,4 @@ ul li p{padding: 0;margin: 0;font-size: 2.4rem;}
         height: 400px;
         width: 100%;
        }
+       #map h3{font-size: 2.5rem;line-height:1.1;text-align: center;margin: 2px;}
