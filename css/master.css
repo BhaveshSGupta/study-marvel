@@ -1264,3 +1264,12 @@ padding: 0 10px;
 .ebook-download-btn:hover,.ebook-download-btn:focus{text-decoration: none;}
 .footerLeftWrapper ul{float:left;width: 100%;margin-top:0; }
 .mainWrapper{margin-bottom:20px;}
+.socialIcons ul li{float:left;width:auto;background-image:url("../images/social.jpg");list-style: none;}
+.socialIcons ul li a{text-indent:-99999px;display:inline-block;width:93px;height:75px;max-width: 100%;}
+li.insta{background-position: -65px 0;}
+li.fb{background-position: 13px 0;width: 80px!important;}
+li.mail{background-position: -246px -2px}
+.socialIcons ul{margin:0;float:left;width:100%;padding:0}
+.float100{float:left;width:100%;}
+.copyright{text-align:center}
+.socialIcons,.copyright{margin-top: 130px;}
